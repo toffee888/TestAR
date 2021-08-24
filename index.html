@@ -9,6 +9,7 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
+        <a-entity light="type: ambient; color: #CCC">
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -23,6 +24,7 @@
             gesture-detector
             
         >
+            
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
@@ -52,5 +54,6 @@
 
             <a-entity camera></a-entity>
         </a-scene>
+       </a-entity>
     </body>
 </html>
