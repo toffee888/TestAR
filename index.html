@@ -12,12 +12,17 @@
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
-            renderer="logarithmicDepthBuffer: true;" "colorManagement: true;"
+            renderer="logarithmicDepthBuffer: true;
+                      colorManagement: true;
+                      physicallyCorrectLights: true;
+                      gammaOutput: true;"
+                 
+            renderer.outputEncoding = sRGBEncoding
+            precision: mediump     
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
-            gesture-detector
-            renderer.outputEncoding = sRGBEncoding
+            gesture-detector    
         >
             <a-assets>
                 <a-asset-item
