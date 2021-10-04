@@ -9,21 +9,18 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-        <a-entity light="type: ambient; color: #CCC">
+        
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
             renderer="logarithmicDepthBuffer: true;
-                      physicallyCorrectLights: true;"
-                 
+                      colorManagement: true;"
             renderer.outputEncoding = THREE.sRGBEncoding;
             precision: mediump     
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
-            gesture-detector
-            
-        >
+            gesture-detector>
             
             <a-assets>
                 <a-asset-item
@@ -38,6 +35,5 @@
                 <a-box position="0 -0.5 -3" width="0.1" height="0.05" depth="0.1"></a-box>
             </a-entity>
         </a-scene>
-       </a-entity>
     </body>
 </html>
