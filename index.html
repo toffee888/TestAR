@@ -54,7 +54,7 @@
             </a-entity>
             
             <script>
-            box.addEventListener('click', function () { document.querySelector('a-scene').components.screenshot.capture('perspective') });
+            box.addEventListener('click', function (evt) { document.querySelector('a-scene').components.screenshot.capture('perspective') });
             </script>
         </a-scene>
     </body>
