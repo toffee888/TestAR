@@ -25,7 +25,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/asset.gltf"
+                    src="assets/icecream.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -33,6 +33,24 @@
             
             <a-entity camera>
                 <a-box position="0 -0.5 -3" width="0.1" height="0.05" depth="0.1"></a-box>
+                
+                <a-entity
+                 raycaster="objects: .clickable"
+                 emitevents="true"
+                 cursor="fuse: false; rayOrigin: mouse;">
+                     
+                    <a-entity
+                    id="bowser-model"
+                    scale="0.2904328751566968 0.2904328751566968 0.2904328751566968"
+                    position="0 -5 0"
+                    animation-mixer="loop: repeat"
+                    glb-model="#animated-asset"
+                    class="clickable"
+                    gesture-handler
+                    ></a-entity> 
+                    
+                 </a-entity>
+                
             </a-entity>
         </a-scene>
     </body>
