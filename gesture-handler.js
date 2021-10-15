@@ -3,7 +3,7 @@
 AFRAME.registerComponent('z-roll', {
   init: function () {
     this.el.addEventListener('click', function (evt) {
-      alert('You are clicking ', evt.detail.intersection.object);
+      alert('You are clicking ');
     });
   }
 });
