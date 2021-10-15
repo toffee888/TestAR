@@ -2,9 +2,8 @@
 
 AFRAME.registerComponent('z-roll', {
   init: function () {
-    this.el.addEventListener('click', alert("You are clicking");
-    );
-  }
+    this.el.addEventListener('click', function (evt) {
+  console.log(evt.detail.intersection.object);
 });
 
 AFRAME.registerComponent('gesture-handler', {
