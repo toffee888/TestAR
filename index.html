@@ -35,9 +35,13 @@
                 ></a-asset-item>
             </a-assets>
 
+            <a-entity
+                     cursor="fuse: false; rayOrigin: mouse;"
+                     raycaster="objects: .clickable"
+                     emitevents="true"></a-entity>
             
             <a-entity camera>
-                     
+                        
                     <a-entity
                     id="bowser-model"
                     scale="1.5 1.5 1.5"
