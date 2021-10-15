@@ -1,7 +1,7 @@
 /* global AFRAME, THREE */
 
 AFRAME.registerComponent('z-roll', {
-  init: tick: function () {
+  init: function () {
     this.el.addEventListener('click', alert("You are clicking");
     );
   }
