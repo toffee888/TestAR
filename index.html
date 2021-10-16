@@ -35,10 +35,12 @@
                 ></a-asset-item>
             </a-assets>
             
-              <a-entity cursor="rayOrigin: mouse; fuseTimeout: 0";
+            <a-entity cursor="rayOrigin: mouse; fuseTimeout: 0";
                 raycaster="objects: .clickable; interval: 1500;"></a-entity>
-  
-            <a-entity camera>
+               
+
+            <a-video id="webcam" playsinline crossorigin="anonymous"></a-video>
+            
                         
                     <a-entity
                     id="bowser-model"
@@ -52,8 +54,6 @@
                     ></a-entity> 
                     
                     <a-image id="image" src="pic.png" position="1 0 -2" class="clickable" visible="true" switchcamera></a-image>   
-                
-                 </a-entity>
                 
             
         </a-scene>
