@@ -35,7 +35,8 @@
                 ></a-asset-item>
             </a-assets>
             
-              <a-entity cursor></a-entity>
+              <a-entity cursor="rayOrigin: mouse; fuseTimeout: 0";
+                raycaster="objects: .clickable; interval: 1500;"></a-entity>
   
             <a-entity camera>
                         
@@ -47,8 +48,11 @@
                     gltf-model="#animated-asset"
                     z-roll
                     gesture-handler
+                    class="clickable"
                     ></a-entity> 
                     
+                    <a-image id="image" src="pic.png" position="1 0 -2" class="clickable" visible="true" switchcamera></a-image>   
+                
                  </a-entity>
                 
             
